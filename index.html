@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internet Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Internet Speed Test</h1>
+
+  <div class="meters">
+    <div class="meter">
+      <canvas id="pingCanvas" width="200" height="200"></canvas>
+      <p>Ping: <span id="pingValue">0</span> ms</p>
+    </div>
+    <div class="meter">
+      <canvas id="downloadCanvas" width="200" height="200"></canvas>
+      <p>Download: <span id="downloadValue">0</span> Mbps</p>
+    </div>
+    <div class="meter">
+      <canvas id="uploadCanvas" width="200" height="200"></canvas>
+      <p>Upload: <span id="uploadValue">0</span> Mbps</p>
+    </div>
+  </div>
+
+  <button onclick="startTest()">Start Test</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
